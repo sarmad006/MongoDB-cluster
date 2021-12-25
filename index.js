@@ -1,5 +1,12 @@
 var axios = require('axios');
 require('dotenv').config()
+if(!process.argv[2])
+{
+    console.log("enter api key");
+}
+else
+{
+
 // var dataOne = JSON.stringify({
 //     "collection": "jupiter",
 //     "database": "test",
@@ -43,7 +50,7 @@ require('dotenv').config()
 //     }]
 // });
             
-//var config = {
+//var reqFour = {
     //     method: 'post',
     //     url: 'https://cloud.mongodb.com/api/atlas/v1.0/groups/<project id>/databaseUsers"',
     //     headers: {
@@ -58,16 +65,68 @@ require('dotenv').config()
     //     },
     //     
         //    data:dataOne,
-        //    data:dataTwo,
-        //    data:dataThree
+       
     // };
 
-if(!process.argv[2])
-{
-    console.log("enter api key");
-}
-else
-{
+    //var reqFive = {
+    //     method: 'post',
+    //     url: 'https://cloud.mongodb.com/api/atlas/v1.0/groups/<project id>/databaseUsers"',
+    //     headers: {
+    //         'Content-Type': 'application/json',
+    //         'Access-Control-Request-Headers': '*',
+    //         'api-key': 'process.argv[2]'
+    //     },
+    //     auth: {
+    //         "user": '<public-api key>',
+    //         "pass": '<private api key>',
+    //         "sendImmediately": false
+    //     },
+    //     
+        //    data:dataTwo,
+       
+    // };
+
+    //var reqSix = {
+    //     method: 'post',
+    //     url: 'https://cloud.mongodb.com/api/atlas/v1.0/groups/<project id>/databaseUsers"',
+    //     headers: {
+    //         'Content-Type': 'application/json',
+    //         'Access-Control-Request-Headers': '*',
+    //         'api-key': 'process.argv[2]'
+    //     },
+    //     auth: {
+    //         "user": '<public-api key>',
+    //         "pass": '<private api key>',
+    //         "sendImmediately": false
+    //     },
+    //     
+        //    data:dataThree,
+       
+    // };
+    // axios(reqFour)
+    // .then(function (response) {
+    //     console.log(JSON.stringify(response.data));
+    // })
+    // .catch(function (error) {
+    //     console.log(error);
+    // });
+
+    // axios(reqFive)
+    // .then(function (response) {
+    //     console.log(JSON.stringify(response.data));
+    // })
+    // .catch(function (error) {
+    //     console.log(error);
+    // });
+
+    // axios(reqSix)
+    // .then(function (response) {
+    //     console.log(JSON.stringify(response.data));
+    // })
+    // .catch(function (error) {
+    //     console.log(error);
+    // });
+   
 
 var jupiterdata = JSON.stringify({
     "collection": "jupiter",
